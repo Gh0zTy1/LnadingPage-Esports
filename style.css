@@ -11,6 +11,44 @@ header {
     width: 110%;
     height: 80px;
     z-index: 900;
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+header .nav-item {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .nav-item-selectable {
+    border-bottom: 3px solid var(--valo-background-color);
+    transition: border-bottom 0.3s ease;
+}
+
+header .nav-item-selectable:hover {
+    border-bottom: 3px solid var(--valo-main-color);
+}
+
+header .nav-item {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .nav-item a {
+    color: var(--valo-secondary-color);
+    font-family: var(--valo-main-font);
+    font-style: none;
+    text-decoration: none;
+}
+
+.itson-logo img {
+    height: 48px;
 }
 
 /* cada seccion del contenedor principal */
