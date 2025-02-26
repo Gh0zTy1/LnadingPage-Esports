@@ -8,6 +8,9 @@
 html {
     background-color: var(--valo-background-color);
     color: var(--valo-secondary-color);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 /* NOTE: AGREGAR ESTA CLASE A LOS ELEMENTOS QUE NECESITEN DE UTILIZARLA */
