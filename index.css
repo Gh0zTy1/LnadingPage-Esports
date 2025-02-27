@@ -14,8 +14,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* NOTE: AGREGAR ESTA CLASE A LOS ELEMENTOS QUE NECESITEN DE UTILIZARLA */
-/* <weight> usar valores entre 100 y 900  */
 .montserrat-normal {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
