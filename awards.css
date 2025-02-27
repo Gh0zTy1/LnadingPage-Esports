@@ -1,0 +1,17 @@
+.awards-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+  margin-top: 80px;    
+  text-align: center;
+}
+
+.icon {
+    width: 200px;  /* Cambia el ancho */
+    height: 200px; /* Cambia la altura */
+    max-width: 100%;  /* No excederá el contenedor */
+    height: auto;    /* Mantendrá su proporción */
+    object-fit: contain; /* Se ajusta sin recortar */
+  }
