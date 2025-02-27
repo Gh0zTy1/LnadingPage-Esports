@@ -10,14 +10,17 @@
 .players-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
     gap: 2rem;
+    margin-bottom: 80px;
 }
 
 /* Tarjeta de jugador dividida en imagen y en descripcion */
 .player-card {
     border-radius: 8px;
     overflow: hidden;
-    width: 100%;
+    width: inherit;
     display: flex;
     flex-direction: row;
 }
