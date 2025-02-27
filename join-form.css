@@ -1,0 +1,234 @@
+/* join-forms.css */
+/* Estilos para el formulario de unión al equipo de Valorant eSports */
+
+.valorant-font {
+    font-family: 'VALORANT', sans-serif;
+    letter-spacing: 1px;
+}
+
+#join-us {
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#join-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt1e2173565d6cb2c5/5ed7ef31f66b2515ddd0ea5a/Valorant_1_LoRes.jpg') center center/cover;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.join-form {
+    background-color: rgba(15, 21, 25, 0.9);
+    border: 2px solid var(--valo-main-color);
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(249, 81, 81, 0.3);
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.join-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, var(--valo-main-color), transparent);
+}
+
+.form-title {
+    color: var(--valo-main-color);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-shadow: 0 0 10px rgba(249, 81, 81, 0.5);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: var(--valo-main-font);
+    font-weight: 500;
+    color: var(--valo-secondary-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(249, 81, 81, 0.3);
+    border-radius: 3px;
+    color: var(--valo-secondary-color);
+    font-family: var(--valo-main-font);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--valo-main-color);
+    box-shadow: 0 0 10px rgba(249, 81, 81, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.form-group select option {
+    background-color: var(--valo-background-color);
+    color: var(--valo-secondary-color);
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background-color: var(--valo-main-color);
+    color: var(--valo-secondary-color);
+    font-family: 'VALORANT', sans-serif;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(249, 81, 81, 0.4);
+}
+
+.submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.4s ease;
+}
+
+.submit-btn:hover {
+    background-color: #df3939;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249, 81, 81, 0.6);
+}
+
+.submit-btn:hover::before {
+    left: 100%;
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(249, 81, 81, 0.4);
+}
+
+/* Estilos para destacar los distintos rangos con colores */
+.form-group select#rank option[value="hierro"] {
+    color: #828282;
+}
+
+.form-group select#rank option[value="bronce"] {
+    color: #cd7f32;
+}
+
+.form-group select#rank option[value="plata"] {
+    color: #c0c0c0;
+}
+
+.form-group select#rank option[value="oro"] {
+    color: #ffd700;
+}
+
+.form-group select#rank option[value="platino"] {
+    color: #00ffbf;
+}
+
+.form-group select#rank option[value="diamante"] {
+    color: #b9f2ff;
+}
+
+.form-group select#rank option[value="ascendente"] {
+    color: #84ff8e;
+}
+
+.form-group select#rank option[value="inmortal"] {
+    color: #ff77ff;
+}
+
+.form-group select#rank option[value="radiante"] {
+    color: #ffea00;
+}
+
+/* Animación para cuando el formulario aparece en la pantalla */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.join-form {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 10px;
+    }
+    
+    .join-form {
+        padding: 20px;
+    }
+    
+    .form-title {
+        font-size: 24px;
+    }
+    
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+    }
+}

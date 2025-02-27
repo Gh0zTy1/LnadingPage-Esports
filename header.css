@@ -1,0 +1,107 @@
+
+header {
+    background-color: var(--valo-background-color);
+    box-shadow: 0px 30px 40px var(--valo-background-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 110%;
+    height: 80px;
+    z-index: 900;
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+header .nav-item {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .nav-item-selectable {
+    border-bottom: 3px solid var(--valo-background-color);
+    transition: border-bottom 0.3s ease;
+}
+
+header .nav-item-selectable:hover {
+    border-bottom: 3px solid var(--valo-main-color);
+}
+
+header .nav-item {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .nav-item a {
+    color: var(--valo-secondary-color);
+    font-family: var(--valo-main-font);
+    font-style: none;
+    text-decoration: none;
+}
+
+.itson-logo img {
+    height: 48px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* cada seccion del contenedor principal */
+.container section {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* NOTE: Esta es la imagen de fondo */
+.home-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /* La imagen queda en un plano inferior */
+}
+
+/* NOTE: Este es el div que cubre la imagen para anadir la transparencia */
+.home-cover-blur {
+    background-color: var(--valo-background-color);
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+/* contenedor que muestra el texto de bienvenida */
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.welcome-text div {
+    width: 80%;
+}

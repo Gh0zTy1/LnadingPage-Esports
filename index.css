@@ -1,0 +1,38 @@
+:root {
+    --valo-main-color: #F95151;
+    --valo-secondary-color: white;
+    --valo-background-color: #0F1519;
+    --valo-main-font: "Montserrat", serif;
+}
+
+html {
+    background-color: var(--valo-background-color);
+    color: var(--valo-secondary-color);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* NOTE: AGREGAR ESTA CLASE A LOS ELEMENTOS QUE NECESITEN DE UTILIZARLA */
+/* <weight> usar valores entre 100 y 900  */
+.montserrat-normal {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.montserrat-text {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
