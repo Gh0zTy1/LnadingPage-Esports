@@ -15,3 +15,11 @@
     height: auto;    /* Mantendrá su proporción */
     object-fit: contain; /* Se ajusta sin recortar */
   }
+
+  .icon-redbull {
+    width: 350px;  /* Cambia el ancho */
+    height: 500px; /* Cambia la altura */
+    max-width: 100%;  /* No excederá el contenedor */
+    height: auto;    /* Mantendrá su proporción */
+    object-fit: contain; /* Se ajusta sin recortar */
+  }
