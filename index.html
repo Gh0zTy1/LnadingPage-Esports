@@ -65,9 +65,10 @@
     </section>
 
     <section class="players-section" id="players-info">
+      <h2 class="players-title valorant-font">MIEMBROS</h2>
       <div class="players-container">
         <!-- Jugador 1 -->
-        <div class="player-card">
+        <div class="player-card" id: "player1">
           <div class="player-image">
             <div class="name">Damian</div>
             <img src="images/damian.png" alt="Jugador">
@@ -75,9 +76,8 @@
           <div class="player-info">
             <div class="alias">GhozTI</div>
             <div class="description">
-              Un tío chill de cojones que le gustan los memes, jugar Valorant con sus amigos 
-              y no ir a clase
-              de arquitectura por las mañanas.
+              Un tío chill de cojones que le gustan los memes, jugar Valorant con sus amigos
+              y no ir a clase de arquitectura por las mañanas.
             </div>
             <div class="agents">
               <h4>Agentes</h4>
@@ -92,7 +92,7 @@
       </div>
 
       <!-- Jugador 2 -->
-      <div class="player-card reverse">
+      <div class="player-card reverse" id="player2">
         <div class="player-image">
           <img src="images/neri.png" alt="Jugador">
           <div class="name">Saul Neri</div>
@@ -117,7 +117,7 @@
   </div>
 
   <!-- Jugador 3 -->
-  <div class="player-card">
+  <div class="player-card" id="player3">
     <div class="player-image">
       <div class="name">Kevin</div>
       <img src="images/kevin.png" alt="Jugador">
@@ -141,7 +141,7 @@
   </div>
 
   <!-- Jugador 4 -->
-  <div class="player-card reverse">
+  <div class="player-card reverse" id="player4">
     <div class="player-image">
       <img src="images/sebas.png" alt="Jugador">
       <div class="name">Sebastian</div>
@@ -190,21 +190,55 @@
   </section>
 
   <section class="patrocinadores" id="sponsors">
-    <div>
-      <p><strong>Torneo:</strong> VCT Masters Tokyo</p>
-      <p><strong>Posición:</strong> 🥈 2do Lugar</p>
-    </div>
-    <div>
-      <p><strong>Torneo:</strong> VCT Masters Tokyo</p>
-      <p><strong>Posición:</strong> 🥈 2do Lugar</p>
-    </div>
-    <div>
-      <p><strong>Torneo:</strong> VCT Masters Tokyo</p>
-      <p><strong>Posición:</strong> 🥈 2do Lugar</p>
-    </div>
-    <div>
-      <p><strong>Torneo:</strong> VCT Masters Tokyo</p>
-      <p><strong>Posición:</strong> 🥈 2do Lugar</p>
+    <h2 class="section-title valorant-font">PATROCINADORES</h2>
+    <div class="sponsors-container">
+      <!-- Patrocinador 1 -->
+      <div class="sponsor-card">
+        <div class="sponsor-logo">
+          <img src="sponsors/riot-games.png" alt="Riot Games Logo">
+        </div>
+        <div class="sponsor-name">Riot Games</div>
+        <div class="sponsor-type">Patrocinador Principal</div>
+        <div class="sponsor-description">
+          Desarrollador oficial de Valorant, apoyando nuestra visión para el crecimiento de los esports en ITSON.
+        </div>
+      </div>
+
+      <!-- Patrocinador 2 -->
+      <div class="sponsor-card">
+        <div class="sponsor-logo">
+          <img src="sponsors/redbull.png" alt="Red Bull Logo">
+        </div>
+        <div class="sponsor-name">Red Bull</div>
+        <div class="sponsor-type">Bebida Oficial</div>
+        <div class="sponsor-description">
+          Proporcionando energía a nuestro equipo durante cada torneo y sesión de entrenamiento.
+        </div>
+      </div>
+
+      <!-- Patrocinador 3 -->
+      <div class="sponsor-card">
+        <div class="sponsor-logo">
+          <img src="sponsors/hyperx.png" alt="HyperX Logo">
+        </div>
+        <div class="sponsor-name">HyperX</div>
+        <div class="sponsor-type">Equipo Gaming</div>
+        <div class="sponsor-description">
+          Equipando a nuestros jugadores con periféricos de alta calidad para el máximo rendimiento.
+        </div>
+      </div>
+
+      <!-- Patrocinador 4 -->
+      <div class="sponsor-card">
+        <div class="sponsor-logo">
+          <img src="sponsors/itson.png" alt="ITSON Logo">
+        </div>
+        <div class="sponsor-name">ITSON</div>
+        <div class="sponsor-type">Institución Educativa</div>
+        <div class="sponsor-description">
+          Brindando soporte institucional y recursos para el desarrollo de nuestro equipo de esports.
+        </div>
+      </div>
     </div>
   </section>
 
@@ -295,7 +329,102 @@
   </section>
   </div>
 
-  <footer></footer>
+  <footer>
+    <div class="footer-container">
+      <!-- Logo e info -->
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="itson-logo-mini.png" alt="ITSON E-Sports Logo">
+          <h3>E-SPORTS</h3>
+        </div>
+        <p class="footer-description">
+          Equipo oficial de VALORANT del Instituto Tecnológico de Sonora.
+          Competimos, innovamos y representamos el espíritu deportivo
+          digital de nuestra institución.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="social-icon">
+            <img src="icons/twitter.svg" alt="Twitter">
+          </a>
+          <a href="#" class="social-icon">
+            <img src="icons/instagram.svg" alt="Instagram">
+          </a>
+          <a href="#" class="social-icon">
+            <img src="icons/twitch.svg" alt="Twitch">
+          </a>
+          <a href="#" class="social-icon">
+            <img src="icons/youtube.svg" alt="YouTube">
+          </a>
+        </div>
+      </div>
+
+      <!-- Enlaces rápidos -->
+      <div class="footer-column">
+        <h4 class="footer-title">Enlaces Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#players-info">Miembros</a></li>
+          <li><a href="#awards">Premios</a></li>
+          <li><a href="#sponsors">Patrocinadores</a></li>
+          <li><a href="#join-us">Únete al Equipo</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="footer-column">
+        <h4 class="footer-title">Contacto</h4>
+        <ul class="footer-links">
+          <li>
+            <a href="mailto:esports@itson.edu.mx">
+              <svg width="16" height="16" viewBox="0 0 24 24">
+                <path
+                  d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
+              </svg>
+              esports@itson.edu.mx
+            </a>
+          </li>
+          <li>
+            <a href="tel:+526441234567">
+              <svg width="16" height="16" viewBox="0 0 24 24">
+                <path
+                  d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1-.37-1.12-.57-2.32-.57-3.57 0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM5.03 5h1.5c.07.89.22 1.76.46 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79zM19 18.97c-1.32-.09-2.59-.35-3.8-.75l1.19-1.19c.85.24 1.72.39 2.6.45v1.49z" />
+              </svg>
+              +52 644 123 4567
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width="16" height="16" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
+              ITSON Campus Náinari, Ciudad Obregón
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Horario -->
+      <div class="footer-column">
+        <h4 class="footer-title">Horario de Prácticas</h4>
+        <ul class="footer-links">
+          <li>Lunes - Viernes: 4:00 PM - 8:00 PM</li>
+          <li>Sábados: 10:00 AM - 2:00 PM</li>
+          <li>Domingos: Cerrado</li>
+        </ul>
+        <h4 class="footer-title" style="margin-top: 20px;">Streams</h4>
+        <p style="color: #aaaaaa; font-size: 14px;">
+          Síguenos en Twitch para ver nuestras prácticas y torneos en vivo.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2024 ITSON E-Sports Team. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
