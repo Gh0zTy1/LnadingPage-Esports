@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="join-form.css">
 
     <title>E-Sports ITSON</title>
 </head>
@@ -69,10 +70,84 @@
         </section>
 
         <section id="join-us">
-            <div class="header"></div>
-            <div class="contact-form-container">
-                <form action="" method="post"></form>
-            </div>
+            <form action="" method="post" class="join-form">
+                <h2 class="form-title valorant-font">ÚNETE A NUESTRO EQUIPO</h2>
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu.correo@dominio.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="gametag">Riot ID (Nombre#Tag)</label>
+                    <input type="text" id="gametag" name="gametag" placeholder="Ejemplo: Phantom#1234" required>
+                </div>
+                <div class="form-group">
+                    <label for="rank">Rango actual</label>
+                    <select id="rank" name="rank" required>
+                        <option value="" disabled selected>Selecciona tu rango</option>
+                        <option value="hierro">Hierro</option>
+                        <option value="bronce">Bronce</option>
+                        <option value="plata">Plata</option>
+                        <option value="oro">Oro</option>
+                        <option value="platino">Platino</option>
+                        <option value="diamante">Diamante</option>
+                        <option value="ascendente">Ascendente</option>
+                        <option value="inmortal">Inmortal</option>
+                        <option value="radiante">Radiante</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="main-agent">Agente principal</label>
+                    <select id="main-agent" name="main-agent" required>
+                        <option value="" disabled selected>Selecciona tu agente principal</option>
+                        <option value="astra">Astra</option>
+                        <option value="breach">Breach</option>
+                        <option value="brimstone">Brimstone</option>
+                        <option value="chamber">Chamber</option>
+                        <option value="cypher">Cypher</option>
+                        <option value="deadlock">Deadlock</option>
+                        <option value="fade">Fade</option>
+                        <option value="gekko">Gekko</option>
+                        <option value="harbor">Harbor</option>
+                        <option value="iso">ISO</option>
+                        <option value="jett">Jett</option>
+                        <option value="kayo">KAY/O</option>
+                        <option value="killjoy">Killjoy</option>
+                        <option value="neon">Neon</option>
+                        <option value="omen">Omen</option>
+                        <option value="phoenix">Phoenix</option>
+                        <option value="raze">Raze</option>
+                        <option value="reyna">Reyna</option>
+                        <option value="sage">Sage</option>
+                        <option value="skye">Skye</option>
+                        <option value="sova">Sova</option>
+                        <option value="viper">Viper</option>
+                        <option value="yoru">Yoru</option>
+                        <option value="clove">Clove</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experiencia en torneos</label>
+                    <select id="experience" name="experience" required>
+                        <option value="" disabled selected>Selecciona tu nivel de experiencia</option>
+                        <option value="ninguna">Sin experiencia previa</option>
+                        <option value="local">Torneos locales</option>
+                        <option value="regional">Torneos regionales</option>
+                        <option value="nacional">Torneos nacionales</option>
+                        <option value="internacional">Torneos internacionales</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">¿Por qué quieres unirte a nuestro equipo?</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Cuéntanos sobre ti y tus aspiraciones..."></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="submit-btn">ENVIAR SOLICITUD</button>
+                </div>
+            </form>
         </section>
     </div>
 
