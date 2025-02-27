@@ -51,6 +51,12 @@ header .nav-item a {
     height: 48px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 /* cada seccion del contenedor principal */
 .container section {
     width: 100vw;
