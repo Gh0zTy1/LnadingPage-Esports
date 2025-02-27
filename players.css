@@ -52,6 +52,7 @@
 
 /* Columna derecha: información */
 .player-info {
+    font-family: 'Montserrat', sans-serif;
     flex: 1;
     padding: 1rem;
     display: flex;
@@ -78,13 +79,14 @@
 }
 
 .player-info .agents h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'VALORANT', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .player-info .agents ul {
+    font-family: 'Montserrat', sans-serif;
     list-style: none;
     display: flex;
     flex-direction: column;
