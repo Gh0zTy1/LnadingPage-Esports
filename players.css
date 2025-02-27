@@ -1,9 +1,45 @@
-
-
 .players-section {
     position: relative;
     width: 100vw;
     margin: 0 auto;
+}
+
+.players-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ff4655, transparent);
+}
+
+.players-title {
+    font-family: 'VALORANT', sans-serif;
+    color: #ff4655;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px rgba(255, 70, 85, 0.5);
+    position: relative;
+}
+
+.players-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #ff4655;
+    box-shadow: 0 0 8px rgba(255, 70, 85, 0.7);
+}
+
+@media (max-width: 768px) {
+    .players-title {
+        font-size: 36px;
+    }
 }
 
 /* Contenedor de tarjetas de jugadores */

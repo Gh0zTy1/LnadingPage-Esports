@@ -1,19 +1,308 @@
-
-
-.awards-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 100px; 
-  text-align: center;
+.awards {
+  padding: 60px 0;
+  background-color: #0f1923;
+  position: relative;
+  overflow: hidden;
 }
 
-.icon {
-    width: 200px; 
-    height: 200px;
-    max-width: 100%;  
-    height: auto;    
-    object-fit: contain; 
+.awards::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('vct-background.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.awards h2.form-title {
+  color: #ff4655;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 10px rgba(255, 70, 85, 0.5);
+}
+
+.awards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.award-card {
+  background-color: rgba(25, 31, 40, 0.8);
+  border: 2px solid #ff4655;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.award-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, #ff4655, transparent);
+}
+
+.award-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(255, 70, 85, 0.2);
+}
+
+.award-card .icon {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 8px rgba(255, 70, 85, 0.6));
+  transition: transform 0.3s ease;
+}
+
+.award-card:hover .icon {
+  transform: scale(1.1);
+}
+
+.award-card h2 {
+  font-family: 'VALORANT', sans-serif;
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.award-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #ececec;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.award-card h3 strong {
+  color: #ff4655;
+  font-weight: 700;
+}
+
+.award-card h3:last-child {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+/* Estilos específicos para diferentes posiciones */
+.award-card h3:last-child:has(strong:contains("1er Lugar")) {
+  background-color: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.5);
+}
+
+.award-card h3:last-child:has(strong:contains("2do Lugar")) {
+  background-color: rgba(192, 192, 192, 0.1);
+  border: 1px solid rgba(192, 192, 192, 0.5);
+}
+
+/* Animación sutil en hover */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 70, 85, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 70, 85, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 70, 85, 0); }
+}
+
+.award-card:hover {
+  animation: pulse 1.5s infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .awards-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
   }
+  
+  .award-card {
+    padding: 20px;
+  }
+  
+  .award-card .icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .award-card h2 {
+    font-size: 28px;
+  }
+  
+  .awards h2.form-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .awards-container {
+    grid-template-columns: 1fr;
+  }
+}
+.patrocinadores {
+  padding: 60px 0;
+  background-color: #0f1923;
+  position: relative;
+}
+
+.patrocinadores::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #0f1923 30%, #1a2a38 100%);
+  border-color: #ff4655 50px;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.patrocinadores h2.section-title {
+  color: #ff4655;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+  font-family: 'VALORANT', sans-serif;
+  text-shadow: 0 0 10px rgba(255, 70, 85, 0.5);
+}
+
+.sponsors-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.sponsor-card {
+  background-color: rgba(30, 35, 40, 0.7);
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 4px solid #ff4655;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sponsor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(40, 45, 50, 0.8);
+}
+
+.sponsor-logo {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-bottom: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.sponsor-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
+}
+
+.sponsor-logo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.sponsor-card:hover .sponsor-logo::after {
+  left: 100%;
+}
+
+.sponsor-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.sponsor-type {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #ff4655;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sponsor-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sponsors-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .patrocinadores h2.section-title {
+    font-size: 36px;
+  }
+  
+  .sponsor-logo {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsors-container {
+    grid-template-columns: 1fr;
+  }
+}
