@@ -113,4 +113,72 @@ body {
     /* Valorant red */
     margin-right: 10px;
 }
+
 /*Preparacion para hacerlo responsive*/
+
+/* Responsividad: en pantallas pequeñas se apilan las columnas */
+@media (max-width: 600px) {
+    .player-card {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para tarjetas invertidas */
+.player-card.reverse {
+    flex-direction: row-reverse;
+}
+
+/* En tarjetas invertidas, alinear texto a la derecha */
+.player-card.reverse .player-info {
+    text-align: right;
+}
+
+/* En tarjetas invertidas, cambiar dirección de los elementos de lista */
+.player-card.reverse .player-info .agents ul li {
+    justify-content: flex-end;
+}
+
+/* En tarjetas invertidas, cambiar la dirección del triángulo */
+.player-card.reverse .player-info .agents ul li::before {
+    content: '◀︎';
+    margin-right: 0;
+    margin-left: 10px;
+    order: 2;
+}
+
+/* Nombre en tarjetas invertidas */
+.player-card.reverse .player-image .name {
+    left: auto;
+    right: 10px;
+    text-align: right;
+}
+
+/* Responsividad: en pantallas pequeñas se apilan las columnas */
+@media (max-width: 600px) {
+
+    .player-card,
+    .player-card.reverse {
+        flex-direction: column;
+    }
+
+    .player-card.reverse .player-info {
+        text-align: left;
+    }
+
+    .player-card.reverse .player-info .agents ul li {
+        justify-content: flex-start;
+    }
+
+    .player-card.reverse .player-info .agents ul li::before {
+        content: '►';
+        margin-right: 10px;
+        margin-left: 0;
+        order: 1;
+    }
+
+    .player-card.reverse .player-image .name {
+        left: 10px;
+        right: auto;
+        text-align: left;
+    }
+}
